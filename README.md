@@ -1,9 +1,6 @@
 # GIFT: Guided Fine-Tuning and Transfer for Enhancing Instruction-Tuned Language Models
 
-This repository contains the official implementation of:
-
-**GIFT: Guided Fine-Tuning and Transfer for Enhancing Instruction-Tuned Language Models**  
-Accepted to **ACL 2026 Main Conference**.
+![GIFT](figures/gift.png)
 
 ## Abstract
 
@@ -42,13 +39,6 @@ uv pip install -r requirements.txt
 - Evaluation data is stored in `data`.
 
 If you want to generate annotated training data, use:
-
-```bash
-bash scripts/generate.sh
-```
-
-Current example in `scripts/generate.sh`:
-
 ```bash
 python src/python_scripts/confidence_anno.py --model-path Qwen/Qwen2.5-7B-Instruct --data-file data/training_data/numina_cot_2k.jsonl --output-file data/training_data/numina_cot_2k_llama31-8b.jsonl --max-samples 2000 --prompt-type llama31-8b --max-len 2048
 ```
