@@ -40,7 +40,7 @@ uv pip install -r requirements.txt
 
 If you want to generate annotated training data, use:
 ```bash
-python src/python_scripts/confidence_anno.py --model-path Qwen/Qwen2.5-7B-Instruct --data-file data/training_data/numina_cot_2k.jsonl --output-file data/training_data/numina_cot_2k_llama31-8b.jsonl --max-samples 2000 --prompt-type llama31-8b --max-len 2048
+CUDA_VISIBLE_DEVICES=0 python src/python_scripts/confidence_anno.py --model-path meta-llama/Llama-3.1-8B-Instruuct --data-file data/training_data/numina_cot_2k.jsonl --output-file data/training_data/numina_cot_2k_llama31-8b.jsonl --max-samples 2000 --prompt-type llama31-8b --max-len 2048
 ```
 
 ## Training

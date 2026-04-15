@@ -34,7 +34,7 @@ PROMPT_DICT = {
 
 @dataclass
 class ModelArguments:
-    model_name_or_path: str = field(default="/volume/pt-train/users/wzhang/ghchen/zh/models/Llama-2-7b")
+    model_name_or_path: str = field(default="")
 
 @dataclass
 class DataArguments:

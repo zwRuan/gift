@@ -216,6 +216,18 @@ def main():
     parser.add_argument("--max-len", type=int, default=2048, help="Max sequence length for truncation")
     args = parser.parse_args()
 
+
+    if "CUDA_VISIBLE_DEVICES" in os.environ:
+        env_devices = os.environ["CUDA_VISIBLE_DEVICES"].split(",")
+        available_gpus = [x for x in env_devices if x.strip()]
+        
+        print(f"Detected CUDA_VISIBLE_DEVICES: {available_gpus}")
+        
+        gpu_ids = list(range(len(available_gpus)))
+        
+        print(f"Mapped to internal GPU IDs: {gpu_ids}")
+    else:
+        raise AssertionError("No CUDA_VISIBLE_DEVICES environment variable found! Please run with 'CUDA_VISIBLE_DEVICES=0,1...'")
     # Set start method to spawn for CUDA compatibility
     try:
         mp.set_start_method('spawn', force=True)
