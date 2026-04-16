@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export CUDA_VISIBLE_DEVICES=0,1
 LEARNING_RATE=2e-4
 MODEL_PATH=meta-llama/Llama-3.1-8B-Instruct
 DATA_PATH=data/training_data/numina_cot_2k.jsonl

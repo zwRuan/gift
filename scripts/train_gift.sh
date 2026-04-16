@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export CUDA_VISIBLE_DEVICES=0,1
 DATA_PATH=data/training_data/numina_cot_2k_llama31-8b.jsonl
 OUTPUT_DIR=checkpoints/lora_adapter/llama31-8b_gift_2k
 MODE=gift
