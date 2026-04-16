@@ -74,7 +74,7 @@ We thank the open-source projects:
 If you find our work useful, please cite:
 
 ```bibtex
-@inproceedings{yang2025impart,
+@inproceedings{ruan2026gift,
   title={GIFT: Guided Fine-Tuning and Transfer for Enhancing Instruction-Tuned Language Models},
   author={Zhiwen Ruan, Yichao Du, Jianjie Zheng, Longyue Wang, Yun Chen, Peng Li, Jinsong Su, Yang Liu, Guanhua Chen},
   booktitle={Proceedings of the 64rd Annual Meeting of the Association for Computational Linguistics},
