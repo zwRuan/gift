@@ -1,7 +1,5 @@
 # !/bin/bash
 set -e
-
-# docker: runpod/pytorch:2.2.1-py3.10-cuda12.1.1-devel-ubuntu22.04
 curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 uv venv uv_gift --python 3.12
